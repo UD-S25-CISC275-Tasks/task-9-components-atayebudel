@@ -8,7 +8,7 @@ import { Question, QuestionType } from "./interfaces/question";
 export function makeBlankQuestion(
     id: number,
     name: string,
-    type: QuestionType,
+    type: QuestionType
 ): Question {
     return {
         id: id,
@@ -18,7 +18,7 @@ export function makeBlankQuestion(
         expected: "",
         options: [],
         points: 1,
-        published: false,
+        published: false
     };
 }
 
@@ -145,7 +145,7 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
         ...oldQuestion,
         id: id,
         name: "Copy of " + oldQuestion.name,
-        published: false,
+        published: false
     };
     //return oldQuestion;
 }
@@ -176,7 +176,7 @@ export function mergeQuestion(
     id: number,
     name: string,
     contentQuestion: Question,
-    { points }: { points: number },
+    { points }: { points: number }
 ): Question {
     //return {
     //return contentQuestion;
@@ -185,7 +185,7 @@ export function mergeQuestion(
         id: id,
         points: points,
         published: false,
-        name: name,
+        name: name
     };
     return newQuestion;
     //}
