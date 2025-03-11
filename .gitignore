@@ -133,7 +133,11 @@ package-lock.json
 .yarn/build-state.yml
 .yarn/install-state.gz
 <<<<<<< HEAD
+<<<<<<< HEAD
 .pnp.*
 =======
 .pnp.*
 >>>>>>> origin/task-components
+=======
+.pnp.*
+>>>>>>> origin
